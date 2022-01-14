@@ -1,6 +1,6 @@
 :root {
-    --main-font: "roboto", sans-serif;
-    --secondery-font: "raleway", sans-serif;
+    --main-font: "Roboto", sans-serif;
+    --secondery-font: "Raleway", sans-serif;
     --main-color: #2196f3;
 }
 body {
@@ -8,5 +8,30 @@ body {
 }
 /*=header=*/
 .header {
-    background-color: white;
+    background-color: yellowgreen;
+}
+
+/*=navigation portfolio=*/
+.navigation-portfolio-list-item-btn {
+    background-color: "f5f4fa";
+    font-weight: 500;
+    font-size: 15;
+    line-height: 1.625;
+    text-align: center;
+    letter-spacing: 0.03;
+    color: violet;
+    cursor: pointer;
+}
+.navigation-portfolio-list-item-btn:hover,
+.navigation-portfolio-list-item-btn:focus {
+    color: yellow;
+    background-color: var(--main-color);
+}
+/*=all=*/
+.all-list-item-header {
+    font-weight: bold;
+    font-size: 18;
+    line-height: 2;
+    letter-spacing: 0.06;
+    color: violet;
 }
