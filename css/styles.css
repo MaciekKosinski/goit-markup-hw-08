@@ -3,59 +3,89 @@
     --secondery-font: "Raleway", sans-serif;
     --main-color: #2196f3;
 }
-body {
-    font-family: var(--main-font);
-}
-/*=header=*/
-.header {
-    background-color: #FFFFFF;
+h1, h2, h3, h4, h5, h6, ul, p{
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
 }
 a{
     text-decoration: none;
 }
+.body {
+    font-family: var(--main-font);
+    width: 1600px;
+    height: 1880px;
+}
+/*=header=*/
+.header {
+    border-bottom: 1px solid #ECECEC;
+    width: 1600px;
+    height: 80px;
+}
+.menu{
+    display: flex;
+    width: 1600px;
+    margin: 0px 0px 0px 200px;
+    padding: 0px 0px 0px 15px;
+    height: 80px;
+}
+.container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 1200px;
+    margin: 0px 200px 0px 200px;
+}
+
 .black-logo {
     Font-family: var(--secondery-font);
-    Font-style: Bold;
+    Font-style: normal;
     Font-size: 26px;
-    Line-height: 1.938;
-    Line-height: 100%;
-    text-align: Left;
-    Vertical-align: Top;
-    Letter-spacing: 3%;
+    font-weight: 700;
+    Line-height: 1.908;
+    letter-spacing: 0.03em;
+    cursor: pointer;
     color: black;
 }
 .white-logo{
     Font-family: var(--secondery-font);
-    Font-style: Bold;
+    Font-style: normal;
     Font-size: 26px;
-    Line-height: 1.938;
-    Line-height: 100%;
-    text-align: Left;
-    Vertical-align: Top;
-    Letter-spacing: 3%;
-    color: white;
+    font-weight: 700;
+    Line-height: 1.908;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    color: #FFFFFF;
 }
-.navigation-logo{
+.blue-logo{
     Font-family: var(--secondery-font);
-    Font-style: bold;
+    Font-style: normal;
     Font-size: 26px;
-    Line-height: 1.938;
-    Line-height: 100%;
-    text-align: Left;
-    Vertical-align: Top;
-    Letter-spacing: 3%;
+    font-weight: 700;
+    Line-height: 1.908;
+    letter-spacing: 0.03em;
     cursor: pointer;
     color: var(--main-color);
 }
+.navigation{
+    align-self: center;
+}
+.navigation-list{
+    display: flex;
+}
+.navigation-list-item{
+    margin: 32px 23px;
+}
+.navigation-logo{
+    padding: 15px 70px 0px 0px;
+}
 .navigation-link{
     Font-family: var(--main-font);
-    Font-style: Medium;
+    Font-style: normal;
     Font-size: 14px;
-    Line-height: 1;
-    Line-height: 100%;
-    text-align: Left;
-    Vertical-align: Top;
-    Letter-spacing: 2%;
+    font-weight: 500;
+    Line-height: 1.026;
+    Letter-spacing: 0.03em;
     color: #212121;
     cursor: pointer;
 }
@@ -63,37 +93,52 @@ a{
 .navigation-link:focus{
     color: var(--main-color);
 }
-.address{
+.navigation-mail{
     Font-family: var(--main-font);
-    Font-style: Medium;
+    font-style: normal;
     Font-size: 14px;
-    Line-height: 1;
-    Line-height: 100%;
-    text-align: Left;
-    Vertical align: Top;
-    Letter spacing: 2%;
+    font-weight: 500;
+    Line-height: 1.026;
+    letter-spacing: 0.02em;
     color: #757575;
+    margin: 32px 25px 32px 341px;
 }
-.address:focus,
-.address:hover{
-    color: var(--main-color);
+.navigation-tel{
+    Font-family: var(--main-font);
+    font-style: normal;
+    Font-size: 14px;
+    font-weight: 500;
+    Line-height: 1.026;
+    letter-spacing: 0.02em;
+    color: #757575;
+    margin: 32px 27px 32px 25px;
 }
-.navigation-link-agency{
+.navigation-mail:focus,
+.navigation-mail:hover,
+.navigation-tel:focus,
+.navigation-tel:hover{
     color: var(--main-color);
 }
 /*=navigation portfolio=*/
+.navigation-portfolio-list{
+    display: flex;
+}
+.navigation-portfolio-list-item{
+    margin: 94px 4px 35px 4px;
+}
 .navigation-portfolio-list-item-btn {
     Font-family: var(--main-font);
-    Font-style: Medium;
+    Font-style: normal;
     Font-size: 16px;
+    font-weight: 500;
     Line-height: 1.625;
-    Line-height: 139%;
-    text-align: Center;
-    Vertical-align: Top;
-    Letter-spacing: 3%;
+    Letter-spacing: 0.03em;
+    text-align: center;
     color: #212121;
     cursor: pointer;
     background-color: #F5F4FA;
+    display: flex;
+    align-items: center;
 }
 .navigation-portfolio-list-item-btn:focus,
 .navigation-portfolio-list-item-btn:hover{
@@ -101,155 +146,189 @@ a{
 }
 
 /*=all=*/
-.mine {
+.main{
     background-color: #E5E5E5;
+    width: 1600px;
+    height: 1548px;
+}
+.all-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.all-list-item{
+    margin: 15px;
+    width: 370px;
+    height: 404px;
+    background-color: #FFFFFF;
 }
 .all-list-item-header {
     Font-family: var(--main-font);
-    Font-style: Bold;
+    Font-style: normal;
     Font-size: 18px;
-    Line-height: 2.25;
-    Line-height: 171%;
-    text-align: Left;
-    Vertical-align: Top;
-    Letter-spacing: 6%;
+    font-weight: 700;
+    line-height: 2.25;
+    Letter-spacing: 0.06em;
     color: #212121;
+    margin: 20px 24px 2px 24px;
 }
 .all-list-item-text{
     Font-family: var(--main-font);
-    Font-style: Regular;
+    Font-style: normal;
     Font-size: 16px;
-    Line-height: 1.875;
-    Line-height: 160%;
-    text-align: Left;
-    Vertical-align: Top;
-    Letter-spacing: 3%;
+    font-weight: 400;
+    line-height: 1.875;
+    Letter-spacing: 0.03em;
     color: #757575;
+    margin: 2px 24px 20px 24px;
 }
 
 /*footer*/
 .footer{
     background-color: #2F303A;
+    height: 252px;
+    width: 1600px;
+    padding-top: 55px;
+}
+.navigation-logo-footer{
+    margin: 0px 1240px 0px 215px;
 }
 .address-address{
     Font-family: var(--main-font);
-    Font-style: Regular;
+    Font-style: normal;
     Font-size: 14px;
+    font-weight: 400;
     Line-height: 1.5;
-    Line-height: 146%;
-    text-align: Left;
-    Vertical-align: Top;
-    Letter-spacing: 3%;
+    Letter-spacing: 0.03em;
     color: #FFFFFF;
+    margin: 10px 1138px 0px 215px;
 }
 .address-mail{
     Font-family: var(--main-font);
-    Font-style: Regular;
+    Font-style: normal;
     Font-size: 14px;
+    font-weight: 400;
     Line-height: 1.5;
-    Line-height: 146%;
-    text-align: Left;
-    Vertical-align: Top;
-    Letter-spacing: 3%;
+    Letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+}
+.address-mail-item{
+    margin: 9px 1154px 9px 215px;
+}
+.address-tel{    
+    Font-family: var(--main-font);
+    Font-style: normal;
+    Font-size: 14px;
+    font-weight: 400;
+    Line-height: 1.5;
+    Letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.address-tel-item{    
+    margin: 0px 1154px 57px 215px;
+}
+.section-list{
+    display: flex;
+}
+.section-list-item{
+    margin: 94px 15px 0px 15px;
 }
 .section-list-header{
     Font-family: var(--main-font);
-    Font-style: Bold;
+    Font-style: normal;
     Font-size: 14px;
-    Line-height: 1;
-    Line-height: 100%;
-    text-align: Left;
-    Vertical-align: Top;
-    Letter-spacing: 3%;
+    font-weight: 700;
+    Line-height: 1.5;
+    Letter-spacing: 0.03em;
     color: #212121;
+    margin-bottom: 10px;
 }
 .section-list-span{
     Font-family: var(--main-font);
-    Font-style: Regular;
+    Font-style: normal;
     Font-size: 14px;
+    font-weight: 400;
     Line-height: 1.5;
-    Line-height: 146%;
-    text-align: Left;
-    Vertical-align: Top;
-    Letter-spacing: 3%;
+    Letter-spacing: 0.03em;
     color: #757575;
 }
 .hero-header{
     Font-family: var(--main-font);
-    Font-style: Black;
+    Font-style: normal;
     Font-size: 44px;
-    Line-height: 3.75;
-    Line-height: 116%;
+    font-weight: 700;
     text-align: Center;
-    Vertical-align: Top;
-    Letter-spacing: 6%;
+    Letter-spacing: 0.06em;
     color: #FFFFFF;
+    padding: 200px 452px 15px 452px;
 }
 .hero{
     background-color: #2F303A;
+    width: 1600px;
+    height: 600px;
 }
 .hero-btn{
     background-color: var(--main-color);
     cursor: pointer;
-    Vertical-align: Center;
-    text-align: Center;
+    padding: 10px 38px 10px 39px;
+    margin: 15px 700px 200px 700px;
 }
 .hero-btn-text{
-    Font-family: var(--main-font);
-    Font-style: Bold;
-    Font-size: 16px;
-    Line-height: 1.875;
-    Line-height: 160%;
-    Vertical-align: Center;
+    font-family: var(--main-font);
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.875;
     text-align: Center;
-    Letter-spacing: 6%;
+    letter-spacing: 0.06em;
     color: #FFFFFF;
 }
-.section3{
-    Font-family: var(--main-font);
-    Font-style: Bold;
-    Font-size: 36px;
-    Line-height: 2.625;
-    Line-height: 100%;
-    text-align: Center;
-    Vertical-align: Top;
-    Letter-spacing: 3%;
-    color: #212121;
+.section{
+    background-color: #E5E5E5;
 }
 .section4{
     background-color: #F5F4FA;
+    width: 1600px;
+    height: 648px;
 }
-.section4-header{
+.section4-list-item{
+    margin: 15px;
+    height: 368px;
+    width: 270px;
+    background-color: #FFFFFF;
+}
+.section-header{
     Font-family: var(--main-font);
-    Font-style: Bold;
+    Font-style: normal;
     Font-size: 36px;
-    Line-height: 2.625;
-    Line-height: 100%;
+    font-weight: 700;
     text-align: Center;
-    Vertical-align: Top;
-    Letter-spacing: 3%;
+    Letter-spacing: 0.03em;
     color: #212121;
+    margin-bottom: 35px;
+    padding-top: 94px;
 }
 .section4-list-header{
     Font-family: var(--main-font);
-    Font-style: Medium;
+    Font-style: normal;
     Font-size: 16px;
-    Line-height: 1.188;
-    Line-height: 100%;
-    text-align: left;
-    Vertical-align: Top;
-    Letter-spacing: 3%;
+    font-weight: 500;
+    text-align: center;
+    Letter-spacing: 0.03em;
     color: #212121;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 .section4-paragraf{
     Font-family: var(--main-font);
-    Font-style: Regular;
+    Font-style: normal;
     Font-size: 16px;
-    Line-height: 1.188;
-    Line-height: 100%;
-    text-align: left;
-    Vertical-align: Top;
-    Letter-spacing: 3%;
+    font-weight: 400;
+    text-align: center;
+    Letter-spacing: 0.03em;
     color: #757575;
+    margin-bottom: 45px;
+}
+.photo{
+    margin: 13px;
+    padding-bottom: 81px;
 }
