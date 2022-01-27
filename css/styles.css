@@ -20,10 +20,14 @@ a{
 }
 .container{
     display: flex;
-    align-content: center;
     justify-content: center;
     width: 1200px;
     margin: 0px auto;
+}
+.menu .container{
+    display: flex;
+    justify-content: space-around;
+    align-self: baseline;
 }
 
 .black-logo {
@@ -66,7 +70,7 @@ a{
     margin: 32px 23px;
 }
 .navigation-logo{
-    padding: 24px 70px 0px 0px;
+    padding: 18px 70px 0px 0px;
 }
 .navigation-link{
     Font-family: var(--main-font);
@@ -134,7 +138,8 @@ a{
 }
 .navigation-portfolio-list-item-btn:focus,
 .navigation-portfolio-list-item-btn:hover{
-    color: var(--main-color);
+    background-color: var(--main-color);
+    color: white;
 }
 
 /*=all=*/
@@ -172,7 +177,11 @@ a{
 /*footer*/
 .footer{
     background-color: #2F303A;
-    padding-top: 55px;
+}
+.footer .container{
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
 }
 .address-address{
     Font-family: var(--main-font);
@@ -182,6 +191,8 @@ a{
     Line-height: 1.5;
     Letter-spacing: 0.03em;
     color: #FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 9px;
 }
 .address-mail{
     Font-family: var(--main-font);
@@ -191,6 +202,7 @@ a{
     Line-height: 1.5;
     Letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    padding-bottom: 9px;
 }
 .address-tel{    
     Font-family: var(--main-font);
@@ -200,9 +212,6 @@ a{
     Line-height: 1.5;
     Letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-}
-.address-tel-item{    
-    padding-bottom: 60px;;
 }
 .section-list{
     display: flex;
@@ -229,6 +238,9 @@ a{
     Letter-spacing: 0.03em;
     color: #757575;
 }
+.main{
+    padding-bottom: 94px;
+}
 .hero-header{
     Font-family: var(--main-font);
     Font-style: normal;
@@ -236,22 +248,27 @@ a{
     font-weight: 700;
     Letter-spacing: 0.06em;
     color: #FFFFFF;
-    padding-top: 200px;
-    padding-right: 260px;
-    padding-left: 260px;
     text-align: center;
+    display: block;
+    width: 696px;
+    padding-bottom: 30px;
 }
 .hero{
     background-color: #2F303A;
 }
+.hero .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 200px 0;
+}
 .hero-btn{
     background-color: var(--main-color);
+    font-family: var(--main-font);
     cursor: pointer;
-    padding: 10px 38px 10px 39px;
-    align-content: center;
-    margin-bottom: 200px;
-    margin-top: 40px;
-    margin-left: 485px;
+    align-items: center;
+    height: 50px;
+    width: 200px;
 }
 .hero-btn-text{
     font-family: var(--main-font);
@@ -265,6 +282,9 @@ a{
 }
 .section4{
     background-color: #F5F4FA;
+}
+.section4 .container{
+    padding-bottom: 94px;
 }
 .section4-list-item{
     margin: 15px;
