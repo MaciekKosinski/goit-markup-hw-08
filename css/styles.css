@@ -24,7 +24,7 @@ a{
     width: 1200px;
     margin: 0px auto;
 }
-.menu .container{
+.navigation .container{
     display: flex;
     justify-content: space-around;
     align-self: baseline;
@@ -237,9 +237,6 @@ a{
     Line-height: 1.5;
     Letter-spacing: 0.03em;
     color: #757575;
-}
-.main{
-    padding-bottom: 94px;
 }
 .hero-header{
     Font-family: var(--main-font);
