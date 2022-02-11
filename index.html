@@ -23,12 +23,11 @@
         <header class="header">
     
             <!--menu-->
-            <nav class="navigation">
-                <div class="container">
+            <div class="container">
                 <a class="navigation-logo" href="index.html"><span class="blue-logo">Web</span><span class="black-logo">Studio</span></a>
                 <nav class="navigation">
                     <ul class="navigation-list">
-                        <li class="navigation-list-item"><a class="navigation-link" href="index.html">Agencja</a></li>
+                        <li class="navigation-list-item"><a class="navigation-link navigation-link-agency" href="index.html">Agencja</a></li>
                         <li class="navigation-list-item"><a class="navigation-link" href="portfolio.html">Portfolio</a></li>
                         <li class="navigation-list-item"><a class="navigation-link" href="link">Kontakt</a></li>
                     </ul>
@@ -47,9 +46,8 @@
                         </svg>+48 111 111 111</a>
                     </li>
                 </ul>
-                </div>
+            </div>
 
-            </menu>
         </header>
 
     <!--main-->
@@ -59,7 +57,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-header"> EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-                <button class="hero-btn" type="button"><span class="hero-btn-text">Zamów usługe</span></button>
+                <button class="hero-btn" type="button" data-modal-open>Zamów usługe</button>
             </div>
          </section>
     
@@ -109,14 +107,25 @@
         </section>
     
         <!--section3-->
+        <div class="container">
         <section class="section">
             <h2 class="section-header">Czym się zajmujemy</h2>
-            <div class="container">
-                <img class="photo" src="images\czym sie zajmujemy 1.webp" width="370px" height="294px" alt="praca na komputerze">
-                <img class="photo" src="images\czym sie zajmujemy 2.webp" width="370px" height="294px" alt="projekty app mobilnej">
-                <img class="photo" src="images\czym sie zajmujemy 3.webp" width="370px" height="294px" alt="kolory na tablecie">
-            </div>
+                <ul class="photo-list">
+                    <li class="photo-list-item">
+                        <img class="photo" src="images\czym sie zajmujemy 1.webp" width="370px" height="294px" alt="praca na komputerze">
+                        <div class="photo-text">Aplikacje komputerowe</div>
+                    </li>
+                    <li class="photo-list-item">
+                        <img class="photo" src="images\czym sie zajmujemy 2.webp" width="370px" height="294px" alt="projekty app mobilnej">
+                        <div class="photo-text">Aplikacje mobilne</div>
+                    </li>
+                    <li class="photo-list-item">
+                        <img class="photo" src="images\czym sie zajmujemy 3.webp" width="370px" height="294px" alt="kolory na tablecie">
+                        <div class="photo-text">Rozwiązania graficzne</div>
+                    </li>
+                </ul>
         </section>
+        </div>
 
 
         <!--section4-->
@@ -234,9 +243,9 @@
             </div>
         </section>
 
+        <div class="container">
         <section class="own-clients">
             <h2 class="section-header">Nasi klienci</h2>
-            <div class="container">
                 <ul class="own-clients-list">
                     <li class="own-clients-list-item">
                         <a class="own-clients-link">
@@ -271,7 +280,7 @@
                         <svg class="icons-list-item-clients" width="106" height="60,04">
                             <use href="images/icons.svg#icon-nasi-klienci-5"></use>
                         </svg>
-                    </a>
+                        </a>
                     </li>
                     <li class="own-clients-list-item">
                         <a class="own-clients-link">
@@ -281,8 +290,8 @@
                     </a>
                     </li>
                 </ul>
-            </div>
         </section>
+        </div>
 
     </main>
 
@@ -327,5 +336,15 @@
                 </div>
                 </div>
             </footer>
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <button class="close-btn" type="button" data-modal-close>
+                        <svg class="x-btn" width="11px" height="11px">
+                            <use href="images/icons.svg#icon-close"></use>
+                        </svg>
+                        </button>
+                    </div>
+                </div>
+                <script src="./modal.js"></script>
             </body>    
         </html>
