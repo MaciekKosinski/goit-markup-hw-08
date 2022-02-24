@@ -1,0 +1,10 @@
+.own-clients{
+    display: block;
+}
+.own-clients-list{
+    display: flex;
+    margin-bottom: 94px;
+}
+.own-clients-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
