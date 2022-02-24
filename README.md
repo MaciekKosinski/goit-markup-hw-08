@@ -1,2 +1,2 @@
-# goit-markup-hw-06
-https://maciekkosinski.github.io/goit-markup-hw-06/
+# goit-markup-hw-07
+https://maciekkosinski.github.io/goit-markup-hw-07/
