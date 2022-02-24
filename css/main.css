@@ -1,3 +1,9 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --secondery-font: "Raleway", sans-serif;
+  --main-color: #2196f3;
+}
+
 .is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -5,12 +11,6 @@
   transform: scale(0);
   transition-property: transform, visibility, opacity;
   transition-duration: 500ms;
-}
-
-:root {
-  --main-font: "Roboto", sans-serif;
-  --secondery-font: "Raleway", sans-serif;
-  --main-color: #2196f3;
 }
 
 h1, h2, h3, h4, h5, h6, ul, p {
