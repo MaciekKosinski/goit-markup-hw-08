@@ -3,13 +3,21 @@
     justify-content: center;
     width: 1200px;
     margin: 0px auto;
+
+    .navigation &{
+        display: flex;
+        justify-content: space-around;
+        align-self: baseline;
+    }
+    .hero &{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 200px 0;
+    }
+    .section4 &{
+        padding-bottom: 94px;
+    }
 }
-.navigation .container{
-    display: flex;
-    justify-content: space-around;
-    align-self: baseline;
-}
-.container-footer{
-    display: flex;
-    justify-content: center;
-}
+
+
