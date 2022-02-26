@@ -7,20 +7,29 @@
 .navigation-list{
     display: flex;
 }
-.navigation-list-item{
+.navigation-list__item{
     margin: 0px 23px;
 }
 .address-list{
     display: flex;
     align-items: center;
-}
-.envelop-tel{
-    margin-right: 10px;
-    fill: currentColor;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus{
-        color: var(--main-color);
+    &__item{
+        font-family: var(--main-font);
+        font-style: normal;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.026;
+        letter-spacing: 0.02em;
+    }
+    &__icon{
+        margin-right: 10px;
+        fill: currentColor;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus{
+            color: var(--main-color);
+        }
     }
 }

@@ -1,12 +1,9 @@
-.own-clients{
-    display: block;
 
-    &-list{
-        display: flex;
-        margin-bottom: 94px;
+.own-clients-list{
+    display: flex;
+    margin-bottom: 94px;
+
+    &__item:not(:last-child) {
+        margin-right: 30px;
     }
-}
-
-.own-clients-list-item:not(:last-child) {
-    margin-right: 30px;
 }
