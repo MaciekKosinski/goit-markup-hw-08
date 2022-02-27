@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
 
-    &-item{
+    &__item{
         margin: 15px;
         width: 370px;
         height: 404px;
@@ -23,34 +23,34 @@
             border-radius: 0px 0px 4px 4px;
         }
     }
+    &__div{
+        position: relative;
+        z-index: 999;
+        overflow: hidden;
+        background-color: #FFFFFF;
+    }
+    &__header {
+        font-family: var(--main-font);
+        font-style: normal;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 2.25;
+        letter-spacing: 0.06em;
+        color: #212121;
+        margin: 20px 24px 2px 24px;
+    }
+    &__text{
+        font-family: var(--main-font);
+        font-style: normal;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.875;
+        letter-spacing: 0.03em;
+        color: #757575;
+        margin: 2px 24px 20px 24px;
+    }
 }
 
-.all-list-item-div{
-    position: relative;
-    z-index: 999;
-    overflow: hidden;
-    background-color: #FFFFFF;
-}
-.all-list-item-header {
-    font-family: var(--main-font);
-    font-style: normal;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 2.25;
-    letter-spacing: 0.06em;
-    color: #212121;
-    margin: 20px 24px 2px 24px;
-}
-.all-list-item-text{
-    font-family: var(--main-font);
-    font-style: normal;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.875;
-    letter-spacing: 0.03em;
-    color: #757575;
-    margin: 2px 24px 20px 24px;
-}
 .anime-information{
     position: absolute;
     width: 370px;
@@ -76,4 +76,6 @@
         transform: translate(0,0);
         transition-duration: 500ms;
     }
-}
+}    
+
+
