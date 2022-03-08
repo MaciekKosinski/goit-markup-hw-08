@@ -1,35 +1,105 @@
-.header {
-    border-bottom: 1px solid #ECECEC;
+@media screen and (max-width: 767px) {
+  .navigation-list__item {
+    display: none;
+  }
+  .address-list__item {
+    display: none;
+  }
+  .address-list__tel {
+    display: none;
+  }
 }
-.navigation{
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo {
+    align-items: center;
+    margin-right: 40px;
+    margin: 15px 0;
+  }
+  .mobile-btn {
+    display: none;
+  }
+  .header {
+    border-bottom: 1px solid #ececec;
+  }
+  .navigation {
     align-self: center;
-}
-.navigation-list{
+  }
+  .navigation-list {
     display: flex;
-}
-.navigation-list__item{
+  }
+  .navigation-list__item {
     margin: 0px 23px;
+  }
+  .address-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    &__item {
+      font-family: var(--main-font);
+      font-style: normal;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.026;
+      letter-spacing: 0.02em;
+    }
+    &__icon {
+      margin-right: 10px;
+      fill: currentColor;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        color: var(--main-color);
+      }
+    }
+    &__mail {
+      margin-left: 40px;
+      line-height: 0.879;
+    }
+    &__tel {
+      margin-left: 40px;
+      line-height: 0.879;
+    }
+  }
 }
-.address-list{
+@media screen and (min-width: 1200px) {
+  .mobile-btn {
+    display: none;
+  }
+  .header {
+    border-bottom: 1px solid #ececec;
+  }
+  .navigation {
+    align-self: center;
+  }
+  .navigation-list {
+    display: flex;
+  }
+  .navigation-list__item {
+    margin: 0px 23px;
+  }
+  .address-list {
     display: flex;
     align-items: center;
 
-    &__item{
-        font-family: var(--main-font);
-        font-style: normal;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 1.026;
-        letter-spacing: 0.02em;
+    &__item {
+      font-family: var(--main-font);
+      font-style: normal;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.026;
+      letter-spacing: 0.02em;
     }
-    &__icon{
-        margin-right: 10px;
-        fill: currentColor;
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-        &:hover,
-        &:focus{
-            color: var(--main-color);
-        }
+    &__icon {
+      margin-right: 10px;
+      fill: currentColor;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        color: var(--main-color);
+      }
     }
+  }
 }

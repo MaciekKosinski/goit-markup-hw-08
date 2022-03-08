@@ -1,74 +1,223 @@
-.footer{
-    background-color: #2F303A;
+@media screen and (max-width: 767px) {
+  .footer {
+    background-color: #2f303a;
     padding: 60px 0;
 
-    &__address{
-        font-family: var(--main-font);
-        font-style: normal;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 1.5;
-        letter-spacing: 0.03em;
-        color: #FFFFFF;
-        margin-top: 9px;
+    &__address {
+      font-family: var(--main-font);
+      font-style: normal;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: 0.03em;
+      color: #ffffff;
+      margin-top: 9px;
+      text-align: center;
     }
-    &__contact{
-        font-family: var(--main-font);
-        font-style: normal;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 1.5;
-        letter-spacing: 0.03em;
-        color: rgba(255, 255, 255, 0.6);
-        padding-bottom: 9px;
+    &__contact {
+      font-family: var(--main-font);
+      font-style: normal;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+      padding-bottom: 9px;
     }
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  .come {
+    margin-top: 60px;
+
+    &__paragraf {
+      font-family: var(--main-font);
+      font-weight: 700;
+      font-size: 14px;
+      font-style: normal;
+      letter-spacing: 0.03em;
+      line-height: 1.026;
+      color: #ffffff;
+      text-align: center;
+    }
+  }
+  .socialmedia {
+    margin-left: 0;
+  }
+  .signe-up {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__paragraf {
+      font-family: var(--main-font);
+      font-weight: 700;
+      font-size: 14px;
+      font-style: normal;
+      letter-spacing: 0.03em;
+      line-height: 1.026;
+      color: #ffffff;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    &__input {
+      background-color: transparent;
+      border: 1px solid #ffffff4d;
+      border-radius: 4px;
+      color: #ffffff4d;
+      min-width: 280px;
+      height: 50px;
+      padding-left: 15px;
+      display: flex;
+      justify-content: center;
+    }
+  }
 }
 
-.come{
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer {
+    background-color: #2f303a;
+    padding: 60px 0;
+
+    &__address {
+      font-family: var(--main-font);
+      font-style: normal;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: 0.03em;
+      color: #ffffff;
+      margin-top: 9px;
+    }
+    &__contact {
+      font-family: var(--main-font);
+      font-style: normal;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+      padding-bottom: 9px;
+    }
+  }
+  .logo {
+    padding: 0;
+  }
+  .logo-address {
+    text-align: center;
+    padding-left: 80px;
+  }
+  .come {
+    text-align: center;
+    padding-right: 80px;
+
+    &__paragraf {
+      font-family: var(--main-font);
+      font-weight: 700;
+      font-size: 14px;
+      font-style: normal;
+      letter-spacing: 0.03em;
+      line-height: 1.026;
+      color: #ffffff;
+    }
+  }
+
+  .signe-up {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 190px;
+
+    &__paragraf {
+      font-family: var(--main-font);
+      font-weight: 700;
+      font-size: 14px;
+      font-style: normal;
+      letter-spacing: 0.03em;
+      line-height: 1.026;
+      color: #ffffff;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    &__input {
+      background-color: transparent;
+      border: 1px solid #ffffff4d;
+      border-radius: 4px;
+      color: #ffffff4d;
+      width: 358px;
+      height: 50px;
+      padding-left: 15px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    background-color: #2f303a;
+    padding: 60px 0;
+
+    &__address {
+      font-family: var(--main-font);
+      font-style: normal;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: 0.03em;
+      color: #ffffff;
+      margin-top: 9px;
+    }
+    &__contact {
+      font-family: var(--main-font);
+      font-style: normal;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+      padding-bottom: 9px;
+    }
+  }
+
+  .come {
     margin-left: 38px;
     margin-top: 20px;
 
-    &__paragraf{
-        font-family: var(--main-font);
-        font-weight: 700;
-        font-size: 14px;
-        font-style: normal;
-        letter-spacing: 0.03em;
-        line-height: 1.026;
-        color: #FFFFFF;
-        margin-left: 32px;
+    &__paragraf {
+      font-family: var(--main-font);
+      font-weight: 700;
+      font-size: 14px;
+      font-style: normal;
+      letter-spacing: 0.03em;
+      line-height: 1.026;
+      color: #ffffff;
+      margin-left: 32px;
     }
+  }
+
+  .signe-up {
+    margin-left: 58px;
+
+    &__paragraf {
+      font-family: var(--main-font);
+      font-weight: 700;
+      font-size: 14px;
+      font-style: normal;
+      letter-spacing: 0.03em;
+      line-height: 1.026;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+    &__input {
+      background-color: transparent;
+      border: 1px solid #ffffff4d;
+      border-radius: 4px;
+      color: #ffffff4d;
+      width: 358px;
+      height: 50px;
+      padding-left: 15px;
+    }
+  }
 }
-
-.signe-up{
-    margin-top: 20px;
-    margin-left: 78px;
-
-    &__div{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    &__paragraf{
-        font-family: var(--main-font);
-        font-weight: 700;
-        font-size: 14px;
-        font-style: normal;
-        letter-spacing: 0.03em;
-        line-height: 1.026;
-        color: #FFFFFF;
-        margin-bottom: 20px;
-    }
-    &__input{
-        background-color: transparent;
-        border: 1px solid #FFFFFF4D;
-        border-radius: 4px;
-        color:#FFFFFF4D;
-        width: 358px;
-        height: 50px;
-        padding-left: 15px;
-    }
-}
-
-
-

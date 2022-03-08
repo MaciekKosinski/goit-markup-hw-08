@@ -1,49 +1,115 @@
-.hero{
-    &__btn{
-        background-color: var(--main-color);
-        font-family: var(--main-font);
-        cursor: pointer;
-        align-items: center;
-        height: 50px;
-        width: 200px;
-        font-family: var(--main-font);
-        font-style: normal;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 1.875;
-        text-align: Center;
-        letter-spacing: 0.06em;
-        color: #FFFFFF;
-        border: none;
-        border-radius: 4px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    }
+
+.signe-up {
+  &__btn {
+    background-color: var(--main-color);
+    cursor: pointer;
+    position: relative;
+    width: 200px;
+    border-radius: 4px;
+    border: none;
+    margin-left: 85px;
+    margin-top: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+  &__btn-paragraf {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    margin: 10px 25px;
+    text-align: left;
+  }
+  &__svg {
+    position: absolute;
+    top: 13px;
+    left: 140px;
+  }
 }
-.signe-up{
-    &__btn{
-        background-color: var(--main-color);
-        cursor: pointer;
-        position: relative;
-        min-width: 200px;
-        border-radius: 4px;
-        border: none;
-        margin-left: 10px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+.hero {
+  &__btn {
+    background-color: var(--main-color);
+    font-family: var(--main-font);
+    cursor: pointer;
+    align-items: center;
+    height: 50px;
+    width: 200px;
+    font-family: var(--main-font);
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.875;
+    text-align: Center;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    margin-bottom: 118px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .signe-up {
+    &__btn {
+      margin-left: 52px;
     }
-    &__btn-paragraf{
-        font-family: var(--main-font);
-        font-weight: 700;
-        font-style: normal;
-        font-size: 16px;
-        line-height: 1.875;
-        letter-spacing: 0.06em;
-        color: #FFFFFF;
-        margin: 10px 25px;
-        text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    &__btn {
+      background-color: var(--main-color);
+      font-family: var(--main-font);
+      cursor: pointer;
+      align-items: center;
+      height: 50px;
+      width: 200px;
+      font-family: var(--main-font);
+      font-style: normal;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.875;
+      text-align: Center;
+      letter-spacing: 0.06em;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      margin-bottom: 118px;
     }
-    &__svg{
-        position: absolute;
-        top: 13px;
-        left: 140px;
+  }
+
+  .signe-up {
+    &__btn {
+      background-color: var(--main-color);
+      cursor: pointer;
+      position: relative;
+      min-width: 200px;
+      border-radius: 4px;
+      border: none;
+      margin-left: 10px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      margin-top: 1px;
     }
+    &__btn-paragraf {
+      font-family: var(--main-font);
+      font-weight: 700;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 1.875;
+      letter-spacing: 0.06em;
+      color: #ffffff;
+      margin: 10px 25px;
+      text-align: left;
+    }
+    &__svg {
+      position: absolute;
+      top: 13px;
+      left: 140px;
+    }
+  }
 }

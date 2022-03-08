@@ -10,6 +10,11 @@
     right: 8px;
     top: 8px;
     cursor: pointer;
+
+        &:hover,
+        &:focus{
+            fill: var(--main-color)
+        }
 }
 .modal-send{
     display: flex;

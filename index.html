@@ -24,6 +24,7 @@
     
             <!--menu-->
             <div class="container">
+                <div class="menu">
                 <a class="logo" href="index.html">Web<span class="logo_black">Studio</span></a>
                 <nav class="navigation">
                     <ul class="navigation-list">
@@ -46,8 +47,16 @@
                         </svg>+48 111 111 111</a>
                     </li>
                 </ul>
-            </div>
 
+                <button class="mobile-btn" type="button" data-open>
+                    <svg class="mobile-btn__svg" width="24" height="16">
+                        <use class="mobile-btn__menu" href="./images/icons.svg#icon-menu"></use>
+                    </svg>
+                </button>
+                </div>
+            </div>
+           
+ 
         </header>
 
     <!--main-->
@@ -59,7 +68,7 @@
                 <h1 class="hero__header"> EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
                 <button class="hero__btn" type="button" data-modal-open>Zamów usługe</button>
             </div>
-         </section>
+         </section> -->
     
 
         <!--section2-->
@@ -301,47 +310,49 @@
 
             <!--footer-->
             <footer class="footer">
-                <div class="container">
-                    <div>
-                    <a class="logo" href="index.html">Web<span class="logo_white">Studio</span></a>
+                <div class="footer-container container">
+                    <div class="logo-address">
+                        <a class="logo" href="index.html">Web<span class="logo_white">Studio</span></a>
                         <ul>
                             <li class="footer__address">m. Warszawa, Aleje Jerozolimskie 21</li>
                             <li class="footer__address"><a class="footer__contact" href="info@example.com">info@example.com</a></li>
-                            <li class="footer__address"><a class="footer__contact" href="tel:+48 111 111 111">+48 111 111 111</a></li>
+                            <li class="footer__address"><a class="footer__contact" href="tel:+48 111 111 111">+48 111 111 111</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="come">
                         <p class="come__paragraf">Dołącz do nas</p>
                         <div class="socialmedia">
-                        <a class="socialmedia__come-link">
-                            <svg class="icons-list-item-come" width="20" height="20">
-                                <use href="images/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                        <a class="socialmedia__come-link">
-                            <svg class="icons-list-item-come" width="20" height="20">
-                                <use href="images/icons.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                        <a class="socialmedia__come-link">
-                            <svg class="icons-list-item-come" width="20" height="20">
-                                <use href="images/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                        <a class="socialmedia__come-link">
-                            <svg class="icons-list-item-come" width="20" height="20">
-                                <use href="images/icons.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
+                            <a class="socialmedia__come-link">
+                                <svg class="icons-list-item-come" width="20" height="20">
+                                    <use href="images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                            <a class="socialmedia__come-link">
+                                <svg class="icons-list-item-come" width="20" height="20">
+                                    <use href="images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                            <a class="socialmedia__come-link">
+                                <svg class="icons-list-item-come" width="20" height="20">
+                                    <use href="images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="socialmedia__come-link">
+                                <svg class="icons-list-item-come" width="20" height="20">
+                                    <use href="images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
                         </div>
                     </div>
-
+            
                     <div class="signe-up">
                         <p class="signe-up__paragraf">Zapisz się do newslettera</p>
                         <lable class="signe-up__lable" for="signe-up-lable">
-                            <input class="signe-up__input" type="mail" id="signe-up-lable" placeholder="E-mail"> 
+                            <input class="signe-up__input" type="mail" id="signe-up-lable" placeholder="E-mail">
                         </lable>
-                        <button class="signe-up__btn" type="submit"> <p class="signe-up__btn-paragraf">Zapisz się</p>
+                        <button class="signe-up__btn" type="submit">
+                            <p class="signe-up__btn-paragraf">Zapisz się</p>
                             <svg class="signe-up__svg" width="24" height="24">
                                 <use href="./images/icons.svg#icon-send"></use>
                             </svg>
@@ -403,6 +414,52 @@
                         </div>
                     </div>
                 </div>
+
+        <div class="modal-menu is-open" data-menu>
+                <button class="modal-menu__btn" type="button" data-close>
+                    <svg class="modal-menu__svg" width="11px" height="11px">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+            <div class="modal-menu__div">
+                <ul class="modal-menu__list">
+                    <li class="modal-menu__item">
+                        <a class="modal-menu__link" href="./index.html">Agencja</a>
+                    </li>
+                    <li class="modal-menu__item">
+                        <a class="modal-menu__link" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="modal-menu__item">
+                        <a class="modal-menu__link" href="">Kontakt</a>
+                    </li>
+                </ul>
+                <ul class="modal-menu__address">
+                    <li class="modal-menu__item">
+                        <a class="modal-menu__tel" href="">+48 111 111 111</a>
+                    </li>
+                    <li class="modal-menu__item">
+                        <a class="modal-menu__mail" href="">info@devstudio.com</a>
+                    </li>
+                </ul>
+        
+                    <ul class="modal-menu-socialmedia">
+                        <li class="modal-menu-socialmedia__item">
+                            <a class="modal-menu-socialmedia__media" href="">Instagram</a>
+                        </li>
+                        <li class="modal-menu-socialmedia__item">
+                            <a class="modal-menu-socialmedia__media" href="">Twitter</a>
+                        </li>
+                        <li class="modal-menu-socialmedia__item">
+                            <a class="modal-menu-socialmedia__media" href="">Facebook</a>
+                        </li>
+                        <li class="modal-menu-socialmedia__item">
+                            <a class="modal-menu-socialmedia__media" href="">LinkedIn</a>
+                        </li>
+                    </ul>
+            
+            </div>
+        </div>
                 <script src="./modal.js"></script>
+                <script src="./mobile-menu.js"></script>
             </body>    
         </html>

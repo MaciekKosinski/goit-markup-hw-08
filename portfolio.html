@@ -21,33 +21,44 @@
 
         <!--header-->
         <header class="header">
-
+        
             <!--menu-->
             <div class="container">
-                <a class="logo" href="index.html">Web<span class="logo_black">Studio</span></a>
-                <nav class="navigation">
-                    <ul class="navigation-list">
-                        <li class="navigation-list__item"><a class="navigation-list__link" href="index.html">Agencja</a></li>
-                        <li class="navigation-list__item"><a class="navigation-list__link navigation-list__link_portfolio" href="portfolio.html">Portfolio</a></li>
-                        <li class="navigation-list__item"><a class="navigation-list__link" href="link">Kontakt</a></li>
+                <div class="menu">
+                    <a class="logo" href="index.html">Web<span class="logo_black">Studio</span></a>
+                    <nav class="navigation">
+                        <ul class="navigation-list">
+                            <li class="navigation-list__item"><a class="navigation-list__link"
+                                    href="index.html">Agencja</a></li>
+                            <li class="navigation-list__item"><a class="navigation-list__link navigation-list__link_portfolio"
+                                    href="portfolio.html">Portfolio</a></li>
+                            <li class="navigation-list__item"><a class="navigation-list__link" href="link">Kontakt</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="address-list">
+                        <li class="address-list__item">
+                            <a class="address-list__mail" href="mailto:info@devstudio.com">
+                                <svg class="address-list__icon" width="16" height="12">
+                                    <use href="images/icons.svg#icon-envelope"></use>
+                                </svg> info@devstudio.com</a>
+                        </li>
+                        <li class="address-list__item"></li>
+                        <a class="address-list__tel" href="tel:48111111111">
+                            <svg class="address-list__icon" width="10" height="16">
+                                <use href="images/icons.svg#icon-smartphone"></use>
+                            </svg>+48 111 111 111</a>
+                        </li>
                     </ul>
-                </nav>
-                <ul class="address-list">
-                    <li class="address-list__item">
-                    <a class="address-list__mail" href="mailto:info@devstudio.com">
-                        <svg class="address-list__icon" width="16" height="12">
-                        <use href="images/icons.svg#icon-envelope"></use>
-                        </svg> info@devstudio.com</a>
-                    </li>
-                    <li class="address-list__item"></li>
-                    <a class="address-list__tel" href="tel:48111111111">
-                        <svg class="address-list__icon" width="10" height="16">
-                        <use href="images/icons.svg#icon-smartphone"></use>
-                        </svg>+48 111 111 111</a>
-                    </li>
-                </ul>
+        
+                    <button class="mobile-btn" type="button" data-open>
+                        <svg class="mobile-btn__svg" width="24" height="16">
+                            <use class="mobile-btn__menu" href="./images/icons.svg#icon-menu"></use>
+                        </svg>
+                    </button>
+                </div>
             </div>
-
+        
+        
         </header>
 
         <main class="main">
@@ -77,7 +88,7 @@
         <div class="container">
             <ul class="all-list">
                 <li class="all-list__item">
-                    <img src="images/portfolio1.jpg" type="button" alt="strona-internetowa-na-laptopie" width="370" height="294">
+                    <img class="all-list__img" src="images/portfolio1.jpg" type="button" alt="strona-internetowa-na-laptopie" width="370" height="294">
                     <div class="all-list__div">
                         <h3 class="all-list__header">Technocrack</h3>
                         <p class="all-list__text">Strona internetowa</p>
@@ -86,7 +97,7 @@
                     </div>
                 </li>
                 <li class="all-list__item">
-                    <img src="images/portfolio2.jpg" alt="koszykówka" width="370" height="294">
+                    <img class="all-list__img" src="images/portfolio2.jpg" alt="koszykówka" width="370" height="294">
                     <div class="all-list__div">
                         <h3 class="all-list__header">Grafika New Orlean vs Golden Star</h3>
                         <p class="all-list__text">Dizajn</p>
@@ -95,7 +106,7 @@
                     </div>
                 </li>
                 <li class="all-list__item">
-                    <img src="images/portfolio3.jpg" type="button" alt="restauracja" width="370" height="294">
+                    <img class="all-list__img" src="images/portfolio3.jpg" type="button" alt="restauracja" width="370" height="294">
                     <div class="all-list__div">
                         <h3 class="all-list__header">Restauracja Seafood</h3>
                         <p class="all-list__text">Aplikacja</p>
@@ -104,7 +115,7 @@
                     </div>
                 </li>
                 <li class="all-list__item">
-                    <img src="images/portfolio4.jpg" alt="słuchawki" width="370" height="294">
+                    <img class="all-list__img" src="images/portfolio4.jpg" alt="słuchawki" width="370" height="294">
                     <div class="all-list__div">
                         <h3 class="all-list__header">Projekt Prime</h3>
                         <p class="all-list__text">Marketing</p>
@@ -113,7 +124,7 @@
                     </div>
                 </li>
                 <li class="all-list__item">
-                    <img src="images/portfolio5.jpg" alt="pudełka" width="370" height="294">
+                    <img class="all-list__img" src="images/portfolio5.jpg" alt="pudełka" width="370" height="294">
                     <div class="all-list__div">
                         <h3 class="all-list__header">Projekt Boxes</h3>
                         <p class="all-list__text">Aplikacja</p>
@@ -122,7 +133,7 @@
                     </div>
                 </li>
                 <li class="all-list__item">
-                    <img src="images/portfolio6.jpg" alt="strona-internetowa-na-monitorze" width="370" height="294">
+                    <img class="all-list__img" src="images/portfolio6.jpg" alt="strona-internetowa-na-monitorze" width="370" height="294">
                     <div class="all-list__div">
                         <h3 class="all-list__header">Inspiration has no Borders</h3>
                         <p class="all-list__text">Strona internetowa</p>
@@ -131,7 +142,7 @@
                     </div>
                 </li>
                 <li class="all-list__item">
-                    <img src="images/portfolio7.jpg" alt="książka" width="370" height="294">
+                    <img class="all-list__img" src="images/portfolio7.jpg" alt="książka" width="370" height="294">
                     <div class="all-list__div">
                         <h3 class="all-list__header">Magazyn Limited Edition</h3>
                         <p class="all-list__text">Dizajn</p>
@@ -140,7 +151,7 @@
                     </div>
                 </li>
                 <li class="all-list__item">
-                    <img src="images/portfolio8.jpg" alt="etykieta-lab" width="370" height="294">
+                    <img class="all-list__img" src="images/portfolio8.jpg" alt="etykieta-lab" width="370" height="294">
                     <div class="all-list__div">
                         <h3 class="all-list__header">Projekt LAB</h3>
                         <p class="all-list__text">Marketing</p>
@@ -149,7 +160,7 @@
                     </div>
                 </li>
                 <li class="all-list__item">
-                    <img src="images/portfolio9.jpg" alt="strona-internetowa-na-laptopie" width="370" height="294">
+                    <img class="all-list__img" src="images/portfolio9.jpg" alt="strona-internetowa-na-laptopie" width="370" height="294">
                     <div class="all-list__div">
                         <h3 class="all-list__header">Growing Business</h3>
                         <p class="all-list__text">Aplikacja</p>
@@ -163,8 +174,8 @@
  
             <!--footer-->
             <footer class="footer">
-                <div class="container">
-                    <div>
+                <div class="footer-container container">
+                    <div class="logo-address">
                     <a class="logo" href="index.html">Web<span class="logo_white">Studio</span></a>
                         <ul>
                             <li class="footer__address">m. Warszawa, Aleje Jerozolimskie 21</li>
@@ -211,5 +222,51 @@
                     </div>
                 </div>
             </footer>
+
+            <div class="modal-menu is-open" data-menu>
+                <button class="modal-menu__btn" type="button" data-close>
+                    <svg class="modal-menu__svg" width="11px" height="11px">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <div class="modal-menu__div">
+                    <ul class="modal-menu__list">
+                        <li class="modal-menu__item">
+                            <a class="modal-menu__link" href="./index.html">Agencja</a>
+                        </li>
+                        <li class="modal-menu__item">
+                            <a class="modal-menu__link" href="./portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="modal-menu__item">
+                            <a class="modal-menu__link" href="">Kontakt</a>
+                        </li>
+                    </ul>
+                    <ul class="modal-menu__address">
+                        <li class="modal-menu__item">
+                            <a class="modal-menu__tel" href="">+48 111 111 111</a>
+                        </li>
+                        <li class="modal-menu__item">
+                            <a class="modal-menu__mail" href="">info@devstudio.com</a>
+                        </li>
+                    </ul>
+            
+                    <ul class="modal-menu-socialmedia">
+                        <li class="modal-menu-socialmedia__item">
+                            <a class="modal-menu-socialmedia__media" href="">Instagram</a>
+                        </li>
+                        <li class="modal-menu-socialmedia__item">
+                            <a class="modal-menu-socialmedia__media" href="">Twitter</a>
+                        </li>
+                        <li class="modal-menu-socialmedia__item">
+                            <a class="modal-menu-socialmedia__media" href="">Facebook</a>
+                        </li>
+                        <li class="modal-menu-socialmedia__item">
+                            <a class="modal-menu-socialmedia__media" href="">LinkedIn</a>
+                        </li>
+                    </ul>
+            
+                </div>
+            </div>
+            <script src="./mobile-menu.js"></script>
             </body>    
         </html>

@@ -1,9 +1,34 @@
-
+@media screen and (max-width: 767px) {
 .own-clients-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 60px;
+
+    &__item{
+        margin: 15px;
+    }
+}
+}
+@media screen and (min-width:768px) and (max-width: 1199px){
+    .own-clients-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 60px;
+
+    &__item{
+        margin: 15px;
+    }
+}
+}
+@media screen and (min-width:1200px) {
+    .own-clients-list{
     display: flex;
     margin-bottom: 94px;
 
     &__item:not(:last-child) {
         margin-right: 30px;
     }
+}
 }
