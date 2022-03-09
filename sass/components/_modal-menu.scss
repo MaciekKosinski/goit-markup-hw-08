@@ -50,7 +50,6 @@
     }
 }
 .modal-menu__div{
-    margin-top: 25px;
     margin-left: 40px;
 }
 .modal-menu__link{
@@ -65,9 +64,6 @@
 .modal-menu__link:hover,
 .modal-menu__link:focus{
     color: var(--main-color);
-}
-.modal-menu__address{
-    margin-top: 100px;
 }
 .modal-menu__tel{
     font-family: var(--main-font);
@@ -88,7 +84,6 @@
 .modal-menu-socialmedia{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 25px;
 }
 .modal-menu-socialmedia__media{
     line-height: 1.375;

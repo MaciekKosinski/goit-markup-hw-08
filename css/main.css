@@ -321,7 +321,6 @@ body {
 }
 
 .modal-menu__div {
-  margin-top: 25px;
   margin-left: 40px;
 }
 
@@ -338,10 +337,6 @@ body {
 .modal-menu__link:hover,
 .modal-menu__link:focus {
   color: var(--main-color);
-}
-
-.modal-menu__address {
-  margin-top: 100px;
 }
 
 .modal-menu__tel {
@@ -365,7 +360,6 @@ body {
 .modal-menu-socialmedia {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 25px;
 }
 
 .modal-menu-socialmedia__media {
@@ -498,7 +492,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .signe-up__btn {
-    margin-left: 52px;
+    margin-left: 43px;
   }
 }
 
